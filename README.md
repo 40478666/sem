@@ -1,4 +1,4 @@
-Software Engineering
+Software Engineering: Kaung Satt
 ===================
 Master [![Build Status](https://travis-ci.com/40478666/sem.svg?branch=master)](https://travis-ci.com/40478666/sem)
 
