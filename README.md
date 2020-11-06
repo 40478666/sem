@@ -1,7 +1,5 @@
-<h1>Heading</h1>
-
-<h2>Sub-heading</h2>
-
+Software Engineering
+===================
 Master [![Build Status](https://travis-ci.com/40478666/sem.svg?branch=master)](https://travis-ci.com/40478666/sem)
 
 License [![LICENSE](https://img.shields.io/github/license/40478666/sem.svg?style=flat-square)](https://github.com/40478666/sem/blob/master/LICENSE)
