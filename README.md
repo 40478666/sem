@@ -1,5 +1,5 @@
 Software Engineering: Kaung Satt
-===============================
+=================================
 Master [![Build Status](https://travis-ci.com/40478666/sem.svg?branch=master)](https://travis-ci.com/40478666/sem)
 
 License [![LICENSE](https://img.shields.io/github/license/40478666/sem.svg?style=flat-square)](https://github.com/40478666/sem/blob/master/LICENSE)
