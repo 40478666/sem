@@ -6,4 +6,4 @@ License [![LICENSE](https://img.shields.io/github/license/40478666/sem.svg?style
 
 Releases [![Releases](https://img.shields.io/github/release/40478666/sem/all.svg?style=flat-square)](https://github.com/40478666/sem/releases)
 
-Develop [![Build Status](https://travis-ci.org/40478666/sem.svg?branch=develop)](https://travis-ci.org/40478666/sem)
+Develop [![Build Status](https://travis-ci.com/40478666/sem.svg?branch=develop)](https://travis-ci.com/40478666/sem)
