@@ -13,12 +13,12 @@ public class App
     /**
      * Connect to the MySQL database.
      */
-    public void connect()
+    public void connect(String location)
     {
         try
         {
             // Load Database driver
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         }
         catch (ClassNotFoundException e)
         {
@@ -35,7 +35,7 @@ public class App
                 // Wait a bit for db to start
                 Thread.sleep(30000);
                 // Connect to database
-                con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?useSSL=false", "root", "example");
+                con = DriverManager.getConnection("jdbc:mysql://" + location + "/employees?allowPublicKeyRetrieval=true&useSSL=false", "root", "example");
                 System.out.println("Successfully connected");
                 break;
             }
@@ -50,6 +50,7 @@ public class App
             }
         }
     }
+
 
     public void displayEmployee(Employee emp)
     {
@@ -186,25 +187,27 @@ public class App
         App a = new App();
 
         // Connect to database
-        a.connect();
+        a.connect("localhost:33060");
 
-        // Extract employee salary information
+        Department dept = a.getDepartment("Sales");
+        ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
 
-        ArrayList<Employee> employees =a.getAllSalaries();
-        for(Employee e:employees)
-        {
-            System.out.println(e.emp_no+"\t"+e.first_name+"\t"+e.last_name+"\t"+e.salary);
-
-        }
-
-        // Test the size of the returned data - should be 240124
-        //System.out.println(employees.size());
+        // Print salary report
+        a.printSalaries(employees);
 
         // Disconnect from database
         a.disconnect();
     }
 
-
-    public void printSalaries(Object o) {
+    private ArrayList<Employee> getSalariesByDepartment(Department dept) {
+        return null;
     }
+
+    private Department getDepartment(String sales) {
+        return null;
+    }
+
+
+//    public void printSalaries(Object o) {
+//    }
 }
